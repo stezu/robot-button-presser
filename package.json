@@ -1,0 +1,44 @@
+{
+  "name": "robot-button-presser",
+  "private": true,
+  "version": "0.1.0",
+  "description": "An implementation of https://code.google.com/codejam/contest/975485/dashboard in node.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test",
+    "lint": "gulp lint",
+    "coverage": "gulp coverage"
+  },
+  "bin": {
+    "robots": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stezu/robot-button-presser.git"
+  },
+  "keywords": [],
+  "files": [
+    "lib/",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "Stephen Zuniga <hello@stephenzuniga.com> (http://stephenzuniga.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stezu/robot-button-presser/issues"
+  },
+  "homepage": "https://github.com/stezu/robot-button-presser#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "istanbul": "^0.4.3",
+    "lodash": "^4.12.0"
+  },
+  "dependencies": {
+    "event-stream": "^3.3.4",
+    "through2": "^2.0.1"
+  }
+}

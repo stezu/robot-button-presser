@@ -29,11 +29,14 @@
   },
   "homepage": "https://github.com/stezu/robot-button-presser#readme",
   "devDependencies": {
+    "beeper": "^1.1.0",
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-istanbul": "^1.0.0",
     "gulp-mocha": "^2.2.0",
-    "istanbul": "^0.4.3"
+    "gulp-sequence": "^0.4.5"
   },
   "dependencies": {
     "event-stream": "^3.3.4"

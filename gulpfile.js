@@ -48,9 +48,9 @@ gulp.task('coverage', ['pre-coverage'], () => {
 });
 
 gulp.task('watch', ['default'], () => {
-  gulp.watch(source.js, () => {
-    sequence(['lint', 'test'])();
-  });
+  gulp.watch(source.js, ['default']);
 });
 
-gulp.task('default', sequence('lint', 'test'));
+gulp.task('default', (done) => {
+  sequence('lint', 'test', done);
+});

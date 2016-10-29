@@ -16,6 +16,8 @@ if (process.argv[2]) {
 
   if (isFile) {
     inputStream = fs.createReadStream(inFilePath);
+  } else {
+    throw new Error(`'${inFilePath}' is not a file.`);
   }
 }
 
@@ -25,4 +27,6 @@ if (process.argv[3]) {
 }
 
 // Call the main function and pass results where we need to
-main(inputStream).pipe(outputStream);
+inputStream
+  .pipe(main())
+  .pipe(outputStream);
